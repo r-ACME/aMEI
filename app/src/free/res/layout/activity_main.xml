@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".Interfaces.Main">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        class="com.example.amei.Interfaces.Schedule.ScheduleView"
+        android:id="@+id/frag_schedule"
+        tools:layout="@layout/fragment_schedule"
+        android:layout_above="@+id/sv_menu_bar"
+        />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        class="com.example.amei.Interfaces.WaitForUpdate"
+        android:id="@+id/frag_client"
+        tools:layout="@layout/fragment_wait_for_update"
+        android:layout_above="@+id/sv_menu_bar"
+        />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        class="com.example.amei.Interfaces.WaitForUpdate"
+        android:id="@+id/frag_products"
+        tools:layout="@layout/fragment_wait_for_update"
+        android:layout_above="@+id/sv_menu_bar"
+        />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        class="com.example.amei.Interfaces.WaitForUpdate"
+        android:id="@+id/frag_accounting"
+        tools:layout="@layout/fragment_wait_for_update"
+        android:layout_above="@+id/sv_menu_bar"
+        />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        class="com.example.amei.Interfaces.WaitForUpdate"
+        android:id="@+id/frag_rh"
+        tools:layout="@layout/fragment_wait_for_update"
+        android:layout_above="@+id/sv_menu_bar"
+        />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        class="com.example.amei.Interfaces.WaitForUpdate"
+        android:id="@+id/frag_registers"
+        tools:layout="@layout/fragment_wait_for_update"
+        android:layout_above="@+id/sv_menu_bar"
+        />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        class="com.example.amei.Interfaces.WaitForUpdate"
+        android:id="@+id/frag_faq"
+        tools:layout="@layout/fragment_wait_for_update"
+        android:layout_above="@+id/sv_menu_bar"
+        />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        class="com.example.amei.Interfaces.GetAnUpgrade"
+        android:id="@+id/frag_contact_us"
+        tools:layout="@layout/fragment_get_an_upgrade"
+        android:layout_above="@+id/sv_menu_bar"
+        />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        class="com.example.amei.Interfaces.WaitForUpdate"
+        android:id="@+id/frag_about"
+        tools:layout="@layout/fragment_wait_for_update"
+        android:layout_above="@+id/sv_menu_bar"
+        />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        class="com.example.amei.Interfaces.WaitForUpdate"
+        android:id="@+id/frag_wait_update"
+        tools:layout="@layout/fragment_wait_for_update"
+        android:layout_above="@+id/sv_menu_bar"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal"
+        android:id="@+id/sv_menu_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="10dp"
+                android:background="@color/gray"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_main_schedule"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:src="@drawable/schedule">
+            </ImageButton>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="10dp"
+                android:background="@color/gray"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_main_clients"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/gray"
+                android:src="@drawable/clients">
+            </ImageButton>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="10dp"
+                android:background="@color/gray"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_main_products"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/gray"
+                android:src="@drawable/products">
+            </ImageButton>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="10dp"
+                android:background="@color/gray"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_main_accounting"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/gray"
+                android:src="@drawable/accounting">
+            </ImageButton>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="10dp"
+                android:background="@color/gray"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_main_rh"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/gray"
+                android:src="@drawable/rh">
+            </ImageButton>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="10dp"
+                android:background="@color/gray"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_main_register"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/gray"
+                android:src="@drawable/registers">
+            </ImageButton>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="10dp"
+                android:background="@color/gray"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_main_faq"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/gray"
+                android:src="@drawable/faq">
+            </ImageButton>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="10dp"
+                android:background="@color/gray"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_main_contact_us"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/gray"
+                android:src="@drawable/contact_us">
+            </ImageButton>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="10dp"
+                android:background="@color/gray"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_main_about"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/gray"
+                android:src="@drawable/about">
+            </ImageButton>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="10dp"
+                android:background="@color/gray"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_main_logout"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/gray"
+                android:src="@drawable/logout">
+            </ImageButton>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="10dp"
+                android:background="@color/gray"
+                />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

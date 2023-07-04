@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">aMEI</string>
+    <string name="document_CNPJ">Verificar CNPJ</string>
+    <string name="document_CPF">Verificar CPF</string>
+    <string name="nd_open">Abrir</string>
+    <string name="nd_close">Fechar</string>
+    <string name="menu_schedules">Agendamento</string>
+
+
+    <string-array name="document_type">
+        <item>CNPJ</item>
+        <item>CPF</item>
+    </string-array>
+
+    <string-array name="alert_schedule">
+        <item>nunca</item>
+        <item>uma hora</item>
+        <item>doze horas</item>
+        <item>um dia</item>
+        <item>dois dias</item>
+        <item>uma semana</item>
+    </string-array>
+
+    <string-array name="alert_frequency">
+        <item>Semanal</item>
+        <item>Mensal</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_user">Login:</string>
+    <string name="login_password">Senha:</string>
+    <string name="login_error_msg">Usuário ou senha incorretos, tente novamente!</string>
+    <string name="login_button_login">Entrar</string>
+    <string name="login_button_signup">Cadastre-se</string>
+    <string name="schedule_create_date">Data:</string>
+    <string name="schedule_create_button_date">Selecione a data</string>
+    <string name="schedule_create_title">Evento:</string>
+    <string name="schedule_create_description">Descrição:</string>
+    <string name="schedule_create_button_save">Salvar</string>
+    <string name="signup_document">CNPJ:</string>
+    <string name="signup_button_document">Verificar CNPJ</string>
+    <string name="signup_password">Senha:</string>
+    <string name="signup_button_signup">Cadastre-se</string>
+    <string name="splash_loading">Loading</string>
+    <string name="schedule_view_schedules_of_day">AGENDAMENTOS DO DIA</string>
+    <string name="schedule_view_button_create">Novo Agendamento</string>
+    <string name="schedule_list_item_title"> </string>
+    <string name="schedule_list_item_description">Selecione um agendamento para ver os detalhes</string>
+    <string name="schedule_list_item_datetime"> </string>
+    <string name="main_button_pattern">Agendamento</string>
+    <string name="contact_us_subject">Assunto:</string>
+    <string name="contact_us_message">Mensagem:</string>
+    <string name="contact_us_button_send">Enviar</string>
+    <string name="schedule_create_time">Horario</string>
+    <string name="schedule_create_button_time">Selecione o horário</string>
+    <string name="get_an_upgrade">You need to pay for an upgraded version</string>
+    <string name="wait_for_upgrade">Volte em uma nova versão</string>
+
+</resources>
