@@ -64,9 +64,9 @@
     <androidx.fragment.app.FragmentContainerView
         android:layout_height="0dp"
         android:layout_width="0dp"
-        class="com.example.amei.Interfaces.WaitForUpdate"
+        class="com.example.amei.Interfaces.FAQ.FAQView"
         android:id="@+id/frag_faq"
-        tools:layout="@layout/fragment_wait_for_update"
+        tools:layout="@layout/fragment_f_a_q_view"
         android:layout_above="@+id/sv_menu_bar"
         />
 

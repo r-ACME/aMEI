@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:id="@+id/fSchedule"
+    android:id="@+id/fFAQ"
     android:paddingBottom="10dp"
     android:paddingRight="10dp"
     android:paddingTop="10dp"
@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white"
-        android:id="@+id/schedule_view"
+        android:id="@+id/faq_view"
         android:padding="10dp"
         >
 
@@ -27,32 +27,31 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/rl_schedule_view"
-                android:layout_weight="3"
-                android:layout_above="@+id/btn_schedule_create"
+                android:id="@+id/rl_faq_view"
+                android:layout_weight="2"
                 >
-                <CalendarView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/schedule_calendar"
-                    android:layout_centerHorizontal="true"
-                    />
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/iv_faq_logo"
+                    android:src="@drawable/logo"
+                    android:layout_centerHorizontal="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/schedule_view_schedules_of_day"
-                    android:id="@+id/lbl_schedule_title"
+                    android:id="@+id/lbl_faq_title"
                     android:layout_centerHorizontal="true"
-                    android:layout_below="@id/schedule_calendar"
+                    android:layout_below="@id/iv_faq_logo"
                     />
                 <androidx.fragment.app.FragmentContainerView
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:layout_below="@id/lbl_schedule_title"
-                    class="com.example.amei.Interfaces.Schedule.ScheduleList"
-                    android:id="@+id/frag_schedule_list"
-                    tools:layout="@layout/fragment_schedule_list"
+                    android:layout_below="@id/lbl_faq_title"
+                    class="com.example.amei.Interfaces.FAQ.FAQList"
+                    android:id="@+id/frag_faq_list"
+                    tools:layout="@layout/fragment_f_a_q_list"
                     android:padding="10dp"
 
                     />
@@ -71,23 +70,13 @@
                 <androidx.fragment.app.FragmentContainerView
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    class="com.example.amei.Interfaces.Schedule.ScheduleListItem"
-                    android:id="@+id/frag_schedule_details"
-                    tools:layout="@layout/fragment_schedule_list_item"
+                    class="com.example.amei.Interfaces.FAQ.FAQListItem"
+                    android:id="@+id/frag_faq_details"
+                    tools:layout="@layout/fragment_f_a_q_list_item"
                     />
 
             </RelativeLayout>
         </androidx.appcompat.widget.LinearLayoutCompat>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn_schedule_create"
-            android:layout_alignParentBottom="true"
-            android:padding="30dp"
-            android:text="@string/schedule_view_button_create"
-            android:textColor="@color/white"
-            android:background="@color/gray"
-            />
 
     </RelativeLayout>
 

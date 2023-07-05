@@ -262,12 +262,10 @@ public class Main extends FragmentActivity {
                 fcvAccounting.setLayoutParams(gone);
                 fcvRH.setLayoutParams(gone);
                 fcvRegister.setLayoutParams(gone);
-                fcvFAQ.setLayoutParams(gone);
+                fcvFAQ.setLayoutParams(match_parent);
                 fcvContactUs.setLayoutParams(gone);
                 fcvAbout.setLayoutParams(gone);
-                fcvUpdate.setLayoutParams(match_parent);
-                Fragment fUpdate = new WaitForUpdate();
-                replaceFragment(fUpdate);
+                fcvUpdate.setLayoutParams(gone);
             }
         });
 

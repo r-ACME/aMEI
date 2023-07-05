@@ -23,6 +23,9 @@
             android:name=".Interfaces.Schedule.ScheduleCreate"
             android:exported="false" />
         <activity
+            android:name=".Interfaces.FAQ.FAQDetailView"
+            android:exported="false" />
+        <activity
             android:name=".Interfaces.Main"
             android:windowSoftInputMode="stateHidden|adjustResize"
             android:exported="false" />

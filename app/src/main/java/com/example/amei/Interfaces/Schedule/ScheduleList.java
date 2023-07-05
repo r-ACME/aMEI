@@ -15,7 +15,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.example.amei.Negocios.API.LocalDataManager;
 import com.example.amei.Negocios.Banco.SchedulesDAO;
@@ -101,7 +100,7 @@ public class ScheduleList  extends ListFragment {
                 FragmentManager fragmentManager = getParentFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-                ScheduleListItem scheduleListItemFragment = (ScheduleListItem) fragmentManager.findFragmentById(R.id.frag_details);
+                ScheduleListItem scheduleListItemFragment = (ScheduleListItem) fragmentManager.findFragmentById(R.id.frag_schedule_details);
                 scheduleListItemFragment.updateSchedule(selectedSchedule);
 
                 fragmentTransaction.commit();
