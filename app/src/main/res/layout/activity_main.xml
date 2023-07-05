@@ -82,9 +82,9 @@
     <androidx.fragment.app.FragmentContainerView
         android:layout_height="0dp"
         android:layout_width="0dp"
-        class="com.example.amei.Interfaces.WaitForUpdate"
+        class="com.example.amei.Interfaces.About"
         android:id="@+id/frag_about"
-        tools:layout="@layout/fragment_wait_for_update"
+        tools:layout="@layout/fragment_about"
         android:layout_above="@+id/sv_menu_bar"
         />
 
@@ -99,16 +99,22 @@
 
     <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:scrollbars="horizontal"
         android:id="@+id/sv_menu_bar"
+        android:scrollbarThumbHorizontal="@color/gray"
+        android:scrollbarTrackHorizontal="@color/white"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="5dp"
         android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:background="@color/gray"
             android:orientation="horizontal">
 
             <TextView
