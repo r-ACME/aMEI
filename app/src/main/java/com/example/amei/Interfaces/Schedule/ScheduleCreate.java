@@ -122,19 +122,23 @@ public class ScheduleCreate extends AppCompatActivity {
         if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
 
             LinearLayoutCompat.LayoutParams show_client = new LinearLayoutCompat.LayoutParams(LinearLayoutCompat.LayoutParams.MATCH_PARENT,LinearLayoutCompat.LayoutParams.WRAP_CONTENT);
+            show_client.weight = 1;
 
             if(allClients.size() == 0){
                 spClient.setLayoutParams(gone);
+                spClient.setVisibility(View.GONE);
                 lblOutOfClients.setLayoutParams(show_client);
             }
 
             if(allProducts.size() == 0){
                 spProduct.setLayoutParams(gone);
+                spProduct.setVisibility(View.GONE);
                 lblOutOfProducts.setLayoutParams(show_client);
             }
 
             if(allServices.size() == 0){
                 spService.setLayoutParams(gone);
+                spService.setVisibility(View.GONE);
                 lblOutOfServices.setLayoutParams(show_client);
             }
 
