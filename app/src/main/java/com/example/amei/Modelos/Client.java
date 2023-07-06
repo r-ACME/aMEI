@@ -8,6 +8,17 @@ public class Client {
     private String type;
     private Boolean active;
 
+    public Client() {
+    }
+
+    public Client(Integer id, Integer person_id, Integer company_id, String type, Boolean active) {
+        this.id = id;
+        this.person_id = person_id;
+        this.company_id = company_id;
+        this.type = type;
+        this.active = active;
+    }
+
     public Integer getId() {
         return id;
     }

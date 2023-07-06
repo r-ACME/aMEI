@@ -185,7 +185,8 @@ public class ScheduleCreate extends AppCompatActivity {
                 List<String> querys = new ArrayList<>();
                 List<Schedule> schedules = new ArrayList<>();
                 DataBase db = new DataBase(ScheduleCreate.this);
-                Client client = (Client) spClient.getSelectedItem();
+                //Client client = (Client) spClient.getSelectedItem();
+                Client client = new Client(0, 0, 0, "", true);
 
                 if (currentSchedule.getId() != 0) {
                     if (scheduleDateTime != null) {
@@ -201,7 +202,7 @@ public class ScheduleCreate extends AppCompatActivity {
                         //ScheduleService thisSchedule = new ScheduleService(0, currentSchedule.getId(), );
                         schedules.add(new Schedule(0, DateUtils.formatDateToString(scheduleDateTime),
                                 txtTitle.getText().toString(), txtDescription.getText().toString(), "", client.getId()));
-                        for (String schedule : schedulesDAO.updateQuerys(schedules)) {
+                        for (String schedule : schedulesDAO.insertQuerys(schedules)) {
                             querys.add(schedule);
                         }
 
