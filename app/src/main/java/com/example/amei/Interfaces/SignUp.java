@@ -73,14 +73,6 @@ public class SignUp extends AppCompatActivity {
         EditText txtCNPJ = findViewById(R.id.txt_signup_cnpj);
         EditText txtPassword = findViewById(R.id.txt_signup_password);
 
-//        Spinner spDocumentType = findViewById(R.id.sp_signup_type_document);
-
-//        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
-//                this,
-//                R.array.document_type,
-//                android.R.layout.simple_spinner_item
-//        );
-
         btnFetchDocument.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

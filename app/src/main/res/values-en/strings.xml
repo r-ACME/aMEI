@@ -58,5 +58,13 @@
     <string name="wait_for_upgrade">Come back after a update</string>
     <string name="dev_team">Dev team:</string>
     <string name="about_message">aMEI system developed to facilitate the control and management of your Individual Micro Company (MEI).  The system includes functionalities for diary control, accounting and HR and the registration of clients, products and services.  We also offer user support with frequently asked questions about MEIs legislation and a contact if you encounter any problems with the system.  Using aMEI, the entrepreneur will be able to manage his company directly from the application in a simple, easy and practical way without the need for external consultations.</string>
+    <string name="faq_view_title">Frequent Asked Questions</string>
+    <string name="faq_answer">Select a question</string>
+    <string name="schedule_create_select_client">Select Client:</string>
+    <string name="schedule_create_out_of_clients">new Client</string>
+    <string name="schedule_create_out_of_product">new Product</string>
+    <string name="schedule_create_product_select">Select Product:</string>
+    <string name="schedule_create_out_of_service">new Service</string>
+    <string name="schedule_create_service_select">Select Service:</string>
 
 </resources>

@@ -58,5 +58,13 @@
     <string name="wait_for_upgrade">Volte em uma nova versão</string>
     <string name="dev_team">Equipe desenvolvedora:</string>
     <string name="about_message">"Sistema aMEI desenvolvido para facilitar o controle e gerenciamento de sua Micro Empresa Individual(MEI).  Sistema contempla funcionalidades de controle de agenda, contabilidade e RH e o cadastro de clientes, produtos e serviços.  Oferecemos também um suporte para o usuário com perguntas frequentes sobre a legislação de MEIs e um contato caso encontre algum problema com o sistema.  Utilizando aMEI o empreendedor poderá gerenciar sua empresa diretamente do aplicativo de forma simples, facil e pratica sem a necessidade de consultas externas.   "</string>
+    <string name="faq_view_title">Perguntas Frequentes</string>
+    <string name="faq_answer">Selecione uma pergunta para ver sua resposta</string>
+    <string name="schedule_create_select_client">Selecione o Cliente:</string>
+    <string name="schedule_create_out_of_clients">Cadastrar Cliente</string>
+    <string name="schedule_create_out_of_product">Cadastrar Produtos</string>
+    <string name="schedule_create_product_select">Selecione o Produto:</string>
+    <string name="schedule_create_out_of_service">Cadastrar Serviço</string>
+    <string name="schedule_create_service_select">Selecione o Serviço:</string>
 
 </resources>

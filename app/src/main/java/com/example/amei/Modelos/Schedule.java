@@ -64,7 +64,12 @@ public class Schedule implements Serializable {
     }
 
     public String queryForUpdate(){
-        return  "UPDATE schedule SET datetime = '" + this.datetime + "',  title = '" + this.title + "', description = '" + this.description + "', alerts = '" + this.alerts + "', client_id = " + this.client_id + " WHERE id = " + this.id;
+        return  "UPDATE schedule SET datetime = '" + this.datetime +
+                "',  title = '" + this.title +
+                "', description = '" + this.description +
+                "', alerts = '" + this.alerts +
+                "', client_id = " + this.client_id +
+                " WHERE id = " + this.id;
     }
 
     public Schedule(Integer id, String datetime, String title, String description, String alerts, Integer client_id) {
